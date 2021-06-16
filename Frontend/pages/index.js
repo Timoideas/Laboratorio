@@ -6,7 +6,6 @@ import {
   Content,
   Poligon,
 } from 'components/Resources/Timoideas';
-import BienvenidaSockets from 'components/SocketsSaludo';
 import { useState } from 'react';
 
 export default function Index() {
@@ -19,7 +18,7 @@ export default function Index() {
       <Body>
         <Section size={1}>
           <Content center flex={0.5}>
-            <h1 className={style.Title}>Frontend</h1>
+            <h1 className={style.Title}>Lab</h1>
             <div className={style.Carousel}>
               <div
                 onClick={() => {
@@ -32,7 +31,7 @@ export default function Index() {
                 className={A}
               >
                 <Poligon sides={8} bg={'#fa0'}>
-                  A
+                  Atención
                 </Poligon>
               </div>
               <div
@@ -46,7 +45,7 @@ export default function Index() {
                 className={B}
               >
                 <Poligon sides={8} bg={'#fa0'}>
-                  B
+                  Blog
                 </Poligon>
               </div>
               <div
@@ -60,11 +59,11 @@ export default function Index() {
                 className={C}
               >
                 <Poligon sides={8} bg={'#fa0'}>
-                  C
+                  Cuenta
                 </Poligon>
               </div>
+              {/* News letter */}
             </div>
-            <BienvenidaSockets />
           </Content>
         </Section>
       </Body>
